@@ -1,12 +1,14 @@
 import React,{useState} from 'react'
-
-
-const Register = () => {
-    const [form,setForm] = useState({
+const initialFormSTate = 
+    {
         username:"",
         email:"",
         password:""
-    })
+    }
+
+
+const Register = () => {
+    const [form,setForm] = useState(initialFormSTate)
     const [user,setUser] = useState(null)
     const handlechange = event => {
         setForm({
@@ -17,6 +19,7 @@ const Register = () => {
     const handleSubmit = event => {
         event.preventDefault()
         setUser(form)
+        setForm(initialFormSTate)
 
     }
     return(
@@ -37,18 +40,21 @@ const Register = () => {
               placeholder="Username"
               name="username"
               onChange={handlechange}
+              value={form.username}
               />
               <input
               type="text"
               placeholder="email"
               name="email"
               onChange={handlechange}
+              value={form.email}
               />
               <input
               type="password"
               placeholder="Password"
               name="password"
               onChange={handlechange}
+              value={form.password }
               />
               <button type="submit">Submit</button>
           </form>
