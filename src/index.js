@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register';
+import API from './API';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Register/>
+    {/* <Register/> */}
+    <API/>
   </React.StrictMode>,
   document.getElementById('root')
 );

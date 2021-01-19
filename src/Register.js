@@ -21,7 +21,7 @@ const Register = () => {
         setUser(form)
         setForm(initialFormSTate)
 
-    }
+    }   
     return(
         <div style={{
             textAlign:"center"
