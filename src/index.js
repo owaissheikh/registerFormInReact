@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register';
 import API from './API';
+import Asyn from './Asyn';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Register/> */}
-    <API/>
+    {/* <API/> */}
+    <Asyn/>
   </React.StrictMode>,
   document.getElementById('root')
 );
