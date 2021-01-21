@@ -8,6 +8,8 @@ import API from './API';
 import Asyn from './Asyn';
 import Search from './Search';
 import Ref from './Ref';
+import Loading from './Loading'
+import ErrorHandle from './ErrorHandle'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +18,9 @@ ReactDOM.render(
     {/* <API/> */}
     {/* <Asyn/> */}
     {/* <Search/> */}
-    <Ref/>
+    {/* <Ref/> */}
+    {/* <Loading/> */}
+    <ErrorHandle/>
   </React.StrictMode>,
   document.getElementById('root')
 );
