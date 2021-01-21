@@ -6,13 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import Register from './Register';
 import API from './API';
 import Asyn from './Asyn';
+import Search from './Search';
+import Ref from './Ref';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Register/> */}
     {/* <API/> */}
-    <Asyn/>
+    {/* <Asyn/> */}
+    {/* <Search/> */}
+    <Ref/>
   </React.StrictMode>,
   document.getElementById('root')
 );
